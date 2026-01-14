@@ -1,0 +1,23 @@
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.header {
+  background: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,.05);
+
+  nav a {
+    margin-left: 1rem;
+    font-weight: 500;
+
+    &.active {
+      color: $primary;
+    }
+  }
+}
