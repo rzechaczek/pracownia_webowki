@@ -1,0 +1,83 @@
+.Post {
+  width: 80%;
+  max-width: 90rem;
+  margin-inline: auto;
+  padding-block: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  &Error,
+  &Loading {
+    font-size: 3rem;
+    color: #ff69b4;
+    text-align: center;
+  }
+
+  &Card {
+    border: 0.1rem solid #ff69b4;
+    border-radius: 0.5rem;
+    padding: 2rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    background: #fff;
+    box-shadow: 0 0.4rem 1.2rem rgba(255, 105, 180, 0.08);
+  }
+
+  &Title {
+    font-size: 2.4rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: #ff69b4;
+    margin: 0;
+    letter-spacing: 0.02em;
+  }
+
+  &Body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #222;
+  }
+
+  &Meta {
+    font-size: 1.2rem;
+    color: #777;
+  }
+
+  &Actions {
+    margin-top: 0.8rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  &BackBtn {
+    display: inline-block;
+    width: fit-content;
+    background-color: #ff69b4;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: darken(#ff69b4, 40);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .Post {
+    max-width: 110rem;
+
+    &Title {
+      font-size: 2.8rem;
+    }
+
+    &Body {
+      font-size: 1.8rem;
+    }
+  }
+}
